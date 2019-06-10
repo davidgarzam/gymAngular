@@ -1,0 +1,26 @@
+$back-color: #f4f4f4;
+$dark-grey: #333333;
+$highlight: #ffa701;
+
+.facts-back{
+    position:relative;
+    background-image: url("../../../assets/images/fit-abs.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px;
+  }
+  .black-overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+  }
+  .show-facts-displays{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }

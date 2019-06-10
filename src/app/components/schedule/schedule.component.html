@@ -1,0 +1,28 @@
+<section id="schedule" name="schedule" class="container">
+  <div class="section-title">
+    <h2>FOLLOW</h2>
+    <h3>YOUR SCHEDULE</h3>
+  </div>
+    <input id="schedule-week-select" type="week" name="year_week" (change)="selectWeek()"  [(ngModel)]="week">
+  <table id="schedule-table">
+    <tr>
+      <th>MONDAY</th>
+      <th>TUESDAY</th>
+      <th>WEDNESDAY</th>
+      <th>THURSEDAY</th>
+      <th>FRIDAY</th>
+      <th>SATURDAY</th>
+      <th>SUNDAY</th>
+    </tr>
+    <tr *ngFor="let gymSheduleWeek of gymSchedule; let i = index" [attr.data-index]="i">
+      <td class="monday">{{gymSchedule[1][i] ? gymSchedule[1][i].nameOfClass : ""}} <p>{{gymSchedule[1][i] ? gymSchedule[1][i].timeOfClass : ""}}</p> </td>
+      <td class="tuesday">{{gymSchedule[5][i] ? gymSchedule[5][i].nameOfClass : ""}} <p>{{gymSchedule[5][i] ? gymSchedule[5][i].timeOfClass : ""}}</p> </td>
+      <td class="wednesday">{{gymSchedule[6][i] ? gymSchedule[6][i].nameOfClass : ""}} <p>{{gymSchedule[6][i] ? gymSchedule[6][i].timeOfClass : ""}}</p> </td>
+      <td class="thurseday">{{gymSchedule[4][i] ? gymSchedule[4][i].nameOfClass : ""}} <p>{{gymSchedule[4][i] ? gymSchedule[4][i].timeOfClass : ""}}</p> </td>
+      <td class="friday">{{gymSchedule[0][i] ? gymSchedule[0][i].nameOfClass : ""}} <p>{{gymSchedule[0][i] ? gymSchedule[0][i].timeOfClass : ""}}</p> </td>
+      <td class="saturday">{{gymSchedule[2][i] ? gymSchedule[2][i].nameOfClass : ""}} <p>{{gymSchedule[2][i] ? gymSchedule[2][i].timeOfClass : ""}}</p> </td>
+      <td class="sunday"> </td>
+    </tr>
+  </table>
+  
+</section>

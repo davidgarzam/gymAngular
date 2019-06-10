@@ -1,0 +1,148 @@
+$back-color: #f4f4f4;
+$dark-grey: #333333;
+$highlight: #ffa701;
+
+.classes-display{
+    width:360px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    //margin-right: 7px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+  :host{
+    justify-content: center;
+  }
+  .classes-display__pic-container{
+    width: 360px;
+    height: 220px;
+    overflow: hidden;
+  }
+  .classes-display__pic{
+    width: 360px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .classes-display__info{
+    width:360px;
+    height:auto;
+    margin:auto;
+  }
+  .classes-display__info__title{
+    font-size:24px;
+    letter-spacing: 2px;
+    margin:25px;
+  }
+  .classes-display__info__specs{
+    margin: auto;
+    height: 90px;
+    font-family: 'Roboto';
+  }
+  .classes-display__info__specs__price{
+    width: 115px;
+    display: inline-block;
+    text-align: center;
+    color:$highlight;
+    font-size: 47px;
+    font-family: 'Fjalla One';
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+    .dollar-sign{
+      color:$highlight;
+      font-size: 30px;
+      position: relative;
+      bottom:18px;
+      font-weight: bold;
+    }
+  }
+  .classes-display__info__specs__instructor-info{
+    width: 115px;
+    display: inline-block;
+    text-align: center;
+  }
+  .classes-display__info__specs__instructor-info-pic{
+    height: 60px;
+    border-radius: 50%;
+    //position: relative;
+  }
+  .classes-display__info__specs__instructor-info-name{
+    color:#a3a3a3;
+    font-size:14px;
+  }
+  .classes-display__info__specs__rating{
+    width: 115px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+    bottom: 22px;
+    i{
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    div{
+      color: #a3a3a3;
+    }
+  }
+  .stars__yellow{
+    color:#fec600;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .stars__grey{
+    color:#a3a3a3;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .classes-display__info__full-class{
+    height: 90px;
+    margin: auto;
+    text-align: center;
+  }
+  .full-class-btn{
+    position: relative;
+    top:20px;
+    border: 0;
+    font-style: inherit;
+    font-size: 14px;
+    font-family: inherit;
+    //vertical-align: baseline;
+    background-color: #e0e0e0;
+    color : #a3a3a3;
+    height: 43px;
+    width: 170px;
+    border-radius: 35px;
+    font-family: 'Fjalla One';
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .classes-display__sessions__info{
+    width: 117px;
+    display: inline-block;
+    text-align: center;
+    color : #a3a3a3;
+    font-size: 11px;
+    i{
+      color:#fec600;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
+  .yellow-line{
+    border-style: solid;
+    border-top-width: 5px;
+    border-color: transparent;
+    border-top-color:#fed434;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 30px;
+    width: 85%;
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+  }

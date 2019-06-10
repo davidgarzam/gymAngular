@@ -1,0 +1,59 @@
+<!-- <article class="classes-display">
+  <div class="classes-display__pic-container"><img class="classes-display__pic"
+      src="../../../assets/images/classes/woman-workingout.jpg" alt=""></div>
+  <div class="classes-display__info">
+    <h3 class="classes-display__info__title">BODY ATTACK</h3>
+    <div class="classes-display__info__specs">
+      <span class="classes-display__info__specs__price"><span class="dollar-sign">$</span>75</span>
+      <span class="classes-display__info__specs__instructor-info"><img
+          class="classes-display__info__specs__instructor-info-pic" src="../../../assets/images/classes/katrin.jpg"
+          alt="">
+        <div class="classes-display__info__specs__instructor-info-name">Katrin Tanja</div>
+      </span>
+      <span class="classes-display__info__specs__rating">
+        <div><i class='fas fa-star'></i><i class='fas fa-star'></i><i class='fas fa-star'></i><i
+            class='fas fa-star'></i><i class='fas fa-star'></i></div>
+        <div>(25 reviews)</div>
+      </span>
+    </div>
+    <div class="classes-display__info__full-class">
+      <button class="full-class-btn">FULL CLASS</button>
+    </div>
+    <div class="classes-display__sessions">
+      <span class="classes-display__sessions__info"><i class='fas fa-calendar-alt'></i>JAN 01, 2018</span>
+      <span class="classes-display__sessions__info"><i class='fas fa-clock'></i>MON-FRI: 6AM - 8AM</span>
+      <span class="classes-display__sessions__info"><i class='fas fa-book'></i>20 SESSIONS</span>
+    </div>
+    <div class="yellow-line"></div>
+  </div>
+</article> -->
+
+
+<!-- <article class="classes-display" *ngFor="let gymClass of gymClasses"> -->
+<article class="classes-display">
+  <div class="classes-display__pic-container"><img class="classes-display__pic" src="{{gymClass.classImg}}" alt="">
+  </div>
+  <div class="classes-display__info">
+    <h3 class="classes-display__info__title">{{gymClass.className}}</h3>
+    <div class="classes-display__info__specs">
+      <span class="classes-display__info__specs__price"><span class="dollar-sign">$</span>{{gymClass.price}}</span>
+      <span class="classes-display__info__specs__instructor-info"><img
+          class="classes-display__info__specs__instructor-info-pic" src="{{gymClass.instructorPic}}" alt="">
+        <div class="classes-display__info__specs__instructor-info-name">{{gymClass.instructorName}}</div>
+      </span>
+      <span class="classes-display__info__specs__rating">
+        <div><i *ngFor= "let printStar of printStars" class='fas fa-star {{printStar}}'></i></div>
+        <div>({{gymClass.reviewNumber}} reviews)</div>
+      </span>
+    </div>
+    <div class="classes-display__info__full-class">
+      <button class="full-class-btn">{{gymClass.classBtn}}</button>
+    </div>
+    <div class="classes-display__sessions">
+      <span class="classes-display__sessions__info"><i class='fas fa-calendar-alt'></i>{{gymClass.startDate}}</span>
+      <span class="classes-display__sessions__info"><i class='fas fa-clock'></i>{{gymClass.classSchedule}}</span>
+      <span class="classes-display__sessions__info"><i class='fas fa-book'></i>{{gymClass.classSessions}}</span>
+    </div>
+    <div class="yellow-line"></div>
+  </div>
+</article>

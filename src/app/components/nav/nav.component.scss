@@ -1,0 +1,60 @@
+$back-color: #f4f4f4;
+$dark-grey: #333333;
+$highlight: #ffa701;
+
+  /////////////////////////PRIMARY NAVIGATION
+  .primary-navigation{
+    height: 110px;
+  }
+  .primary-navigation--fixed{
+    background-color:$back-color;
+    color:#888888;
+    //height: 70px;
+    //padding-top: 42px;
+    top:0px;
+    width: 100%;
+    font-size: 19px;
+    z-index: 10;
+    position: fixed;
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .show-menu-btn{
+    z-index:21; 
+    position:fixed;
+    background-color: $back-color;
+  }
+  .menu-options{
+    position: relative;
+    top:20px;
+  }
+  .primary-navigation__option{
+    text-decoration: none;
+    margin: 20px;
+    
+    &:link{
+      text-decoration: none;
+      color:#888888;
+    }
+    &:active{
+      text-decoration: none;
+      color:#888888;
+    }
+    &:visited{
+      text-decoration: none;
+      color:#888888;
+    }
+    &:hover{
+      //background-color:$highlight;
+      color:$highlight;
+      cursor:pointer;
+    }
+  }
+  .primary-navigation__option--active{
+    color:$highlight !important;
+    &:hover{
+      color:$highlight;
+      cursor:default;
+    }
+  }

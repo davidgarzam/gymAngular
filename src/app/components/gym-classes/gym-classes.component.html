@@ -1,0 +1,25 @@
+<section id="classes" name="classes" class="container">
+  <div class="section-title">
+    <h2>DISCOVER</h2>
+    <h3>OUR CLASSES</h3>
+  </div>
+  <div class="row">
+    <form id="arrange-by" class="col-sm-11 col-xl-12 col-xs-8">
+      <select class="dropdown-list" id="arrange-by__list" (change)="sortBy()">
+        <option value="price">BY PRICE</option>
+        <option value="rating">BY RATING</option>
+        <option value="date">BY DATE</option>
+      </select>
+    </form>
+    <span class="col-sm-1 col-xs-4"></span>
+  </div>
+
+  <div id="gym-classes-container" class="show-displays d-flex justify-content-center">
+    <app-gym-class-card *ngFor="let gymClass of gymClasses" [gymClass]="gymClass" [yellowStars]="gymClass.reviewStars"></app-gym-class-card>
+  </div>
+
+  <div class="view-more">
+    <button class="view-more__btn" href="#" (click)="showmore()" [ngStyle]="{'display' : viewMore === false ? 'none' : 'inline' }">VIEW MORE</button>
+    <button class="view-more__btn view-less-classes" href="#" (click)="showless()" [ngStyle]="{'display' : shownClasses === 3 ? 'none' : 'inline' }">VIEW LESS</button>
+  </div>
+</section>

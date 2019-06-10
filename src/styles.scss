@@ -1,1 +1,289 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans|Roboto&display=swap');
+
+$back-color: #f4f4f4;
+$dark-grey: #333333;
+$highlight: #ffa701;
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: $back-color;
+  font-family: 'Fjalla One';
+}
+
+
+  h2{
+    color:$highlight;
+    font-size: 17px;
+    text-align: center;
+    margin: 5;
+    letter-spacing: 3px;
+
+  }
+  h3{
+    color:$dark-grey;
+    letter-spacing: 4px;
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+  }
+  .section-title{
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  /////////////////////////////////////////SCHEDULE
+  /////////////temporary
+  #schedule-week-select{
+    -webkit-appearance: none;
+    height: 30px;
+    border-style: none;
+    font-size:20px;
+    color:$highlight;
+    background-color: transparent;
+    font-family: 'Fjalla One';
+    margin-top:15px;
+  }
+
+  #schedule-table{
+  border-collapse: separate;
+  border-spacing: 3px;
+  font-family: 'Fjalla One';
+  letter-spacing: 1px;
+  font-size:16px;
+  
+    
+    th{
+      width:170px;
+      height:45px;
+      background-color: $highlight;
+      color:white;
+      font-weight: 100;
+      text-align: center;
+      
+      
+    }
+    td{
+      width:170px;
+      height:100px;
+      background-color: #e5e5e5;
+      color:black;
+      text-align: center; 
+      font-weight: bold;
+      line-height: 12px;
+      color:$dark-grey;
+      line-height: 20px;
+      p{
+        font-size:11px;
+        //font-weight: 100;
+      }
+      &:hover{
+        background-color:#313131;
+        color:white;
+        font-weight: 100;
+      }
+    }
+  }
+////////////////////////////////////FEEDBACK SECTION
+  #feedback{
+    margin-top:100px;
+    height: 500px;
+    background: $dark-grey;
+    
+  }
+  .feedback__img-container{
+     position: absolute;
+     width: 800px;
+     height:500px;
+     overflow: hidden;
+  }
+  .feedback__img{
+    // width: 100%;
+    // height: auto; 
+    ////display: none;
+    width: 800px;
+    height: 500px;
+  }
+  
+  .auto-slider{
+    // width: 800px;
+    // height: 500px;
+    overflow-x:hidden;
+    img{
+      display:block;
+      margin:0; 
+      padding:0;
+    }
+    ul{
+      margin:0; 
+      padding:0;
+    }
+    li{
+      margin:0; 
+      padding:0;
+    }
+  }
+  ///////////////////////////////ANIMATIONS
+ .auto-slider__content{
+   list-style: none;
+   display:flex;
+   position:relative;
+   //animation-name: slide-img;
+   animation-duration:10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+  //  &:hover{
+  //    animation-play-state: paused;
+  //  }
+ }
+ #feedback__img-list{
+  animation-name: slide-img;
+ }
+ #feedback__entries-content{
+   animation-name: slide-review;
+ }
+ 
+  @keyframes slide-img {
+    10%{
+      left:0px;
+    }
+    15%, 30%{
+      left:-800px;
+    }
+    35%, 50%{
+      left:-1600px;
+    }
+    55%, 70%{
+      left:-2400px;
+    }
+    75%, 90%{
+      left:0;
+    }
+  }
+  @keyframes slide-review {
+    10%{
+      left:0px;
+    }
+    15%, 30%{
+      left:-350px;
+    }
+    35%, 50%{
+      left:-700px;
+    }
+    55%, 70%{
+      left:-1050px;
+    }
+    75%, 90%{
+      left:0;
+    }
+  }
+  .feedback__blank-box{
+    position: relative;
+    display: inline-block;
+    min-width: 800px;
+    // max-width: 1100px;
+    width:60%;
+    //height: 500px;
+    margin-right:30px;
+  }
+  .feedback__content{
+   text-align:left;
+   position: relative;
+   //left:900px;
+   padding-top:100px;
+   display: inline-block;
+   width: 350px;
+   //margin:auto;
+   h2{
+     text-align: left;
+     margin:0;
+     //margin-top:100px;
+     font-weight: 100;
+     letter-spacing: 1px;
+   }
+   h3{
+     color:white;
+     margin-top:7px;
+     text-align: left;
+     
+   }
+   p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color:white;
+    margin-top:25px;
+    //max-width:500px;
+    width: 350px;
+   }
+   .feedback__content__name{
+     margin-top:40px;
+     
+   }
+  }
+
+  .feedback__entries-container{
+    width:350px;
+    height: 320px;
+    overflow: hidden;
+    ul{
+      margin:0; 
+      padding:0;
+    }
+    li{
+      margin:0; 
+      padding:0;
+    }
+  }
+ .review{
+    width:350px;
+   // height: 320px;
+  }
+
+//////////////////////////////////////////////////GIVE FEEDBACK SECTION
+  .give-feedback{
+    margin-top:100px;
+    height: 800px;
+    //margin: 0 auto;
+    text-align: center;
+    h3{
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .give-feedback__textbox{
+    color:#3c3c3c;
+    font-family: 'Fjalla One';
+    font-size:32px;
+    padding-left:20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    background-color:transparent;
+    width: 620px;
+    margin-bottom: 20px;
+  }
+  #give-feedback__name{
+    height: 50px;
+  }
+  #give-feedback__feedback{
+    height: 300px;
+    padding-top:15px;
+  }
+  #give-feedback__send-btn{
+    background-color: $highlight;
+    color:$dark-grey;
+    border-style: none;
+    font-style: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+    width: 570px;
+    font-family: 'Fjalla One';
+    
+  }

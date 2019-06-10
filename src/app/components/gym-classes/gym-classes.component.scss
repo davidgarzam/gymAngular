@@ -1,0 +1,60 @@
+$back-color: #f4f4f4;
+$dark-grey: #333333;
+$highlight: #ffa701;
+
+
+//////////////////CLASSES SECTION
+// #classes{
+//     height:auto;
+//   }
+  
+  #arrange-by{
+    height: 50px;
+  }
+  .dropdown-list{
+    -webkit-appearance: none;
+    height: 30px;
+    border-style: none;
+    font-size:20px;
+    color:$highlight;
+    float: right;
+    text-align: right;
+    background-color: transparent;
+    font-family: 'Fjalla One';
+  }
+  .show-displays{
+    //height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    //height:583px;
+    //height: 1166px;
+    //overflow: hidden;
+  }
+  
+  .view-more{
+    height: 160px;;
+    display: flex;
+    justify-content: center;
+  }
+  .view-more__btn{
+    position: relative;
+    top:25px;
+    border: 2px;
+    border-style: solid;
+    border-color: $highlight;
+    font-style: inherit;
+    font-size: 14px;
+    font-family: inherit;
+    background-color:transparent;
+    color : #a3a3a3;
+    height: 45px;
+    width: 170px;
+    border-radius: 35px;
+    font-family: 'Fjalla One';
+    letter-spacing: 1px;
+  }
+  .view-less-classes{
+    //display: none;
+    left: 20px;
+  }
